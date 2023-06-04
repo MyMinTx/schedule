@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+  }
+
+body {
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/image/bitter.jpg);
+    background-size:cover;
+    font-family: 'Karla', sans-serif;
+}
+
+.watch {
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+    margin: 20px auto 0;
+}
+
+.watch h1{
+    margin-top:10px;
+    font-size:100px;
+    font-weight:300px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons img{
+    width: 50px;
+    margin:0 20px;
+    cursor: pointer;
+}
+
+.buttons img:nth-child(2) {
+    width: 70px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 10px auto 20px;
+    padding:30px 30px 30px;
+    border-radius: 15px;
+}
+  
+.todo-app h2 {
+    color: #000000;
+    display: flex;
+    align-items:center;
+    margin-bottom: 20px;
+    font-size: 35 px;
+}
+  
+.row {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background:#edeef0;
+    border-radius:30px;
+    padding-left:15px;
+    margin-bottom:10px;
+}
+  
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight:14px;
+  }
+  
+button {
+    border:none;
+    outline:none;
+    padding:16px 50px;
+    background:#000000;
+    color:#ffffff;
+    font-size:16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+  
+ul li {
+    list-style:none;
+    font-size:20px;
+    padding: 12px 8px 12px 50px;
+    user-select:none;
+    cursor: pointer;
+    position:relative;
+}
+  
+ul li::before {
+    content:'';
+    position: absolute;
+    height:28px;
+    width:28px;
+    border-radius:50%;
+    background-image:url(/image/uncheck.png);
+    background-size:cover;
+    background-position:center;
+    top:12px;
+    left:8px;
+}
+  
+ul li.checked::before {
+    background-image: url(/image/check.png);
+  }
+  
+ul li span {
+    position:absolute;
+    right:25px;
+    top:5px;
+    width:40px;
+    height:40px;
+    font-size:25px;
+    color:#000000;
+    line-height:40px;
+    text-align:center;
+    border-radius: 50%;
+}
+  
+ul li span:hover {
+    background:#ebebeb;
+}
+  
